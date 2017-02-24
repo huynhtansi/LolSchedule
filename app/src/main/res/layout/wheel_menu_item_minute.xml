@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+             tools:background="@color/colorPrimary">
+
+
+    <TextView
+        android:id="@+id/wheel_menu_item_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_horizontal"
+        android:textColor="#fff"
+        android:padding="6dip"
+        android:textSize="24.0dip"
+        tools:text="Test"
+        tools:visibility="visible"
+        android:rotation="180"
+        android:alpha="0.3"/>
+
+</FrameLayout>

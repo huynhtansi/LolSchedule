@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content_scrolling"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.htsi.lolschedule.MainActivity">
+
+    <com.htsi.lolschedule.SimpleTextCursorWheelLayout
+        android:id="@+id/wheelMinutes"
+        android:layout_width="460dip"
+        android:layout_height="460dip"
+        android:layout_gravity="end|bottom"
+        android:layout_marginBottom="-230dp"
+        android:layout_marginEnd="-230dp"
+        app:wheelBackgroundColor="@color/colorPrimaryNext"
+        app:wheelCursorHeight="0dp"
+        app:wheelItemRotateMode="inward"
+        android:elevation="2dp"/>
+
+    <com.htsi.lolschedule.SimpleTextCursorWheelLayout
+        android:id="@+id/wheel"
+        android:layout_width="240dip"
+        android:layout_height="240dip"
+        android:layout_gravity="end|bottom"
+        android:layout_marginBottom="-120dp"
+        android:layout_marginEnd="-120dp"
+        app:wheelBackgroundColor="@color/colorPrimary"
+        app:wheelCursorHeight="0dp"
+        app:wheelFlingValue="460"
+        app:wheelItemRotateMode="inward"
+        app:wheelSelectedAngle="225"
+        android:elevation="6dp"/>
+
+    <Button
+        android:id="@id/id_wheel_menu_center_item"
+        style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="OK"
+        android:layout_gravity="bottom|end"
+        android:textColor="#fff"
+        />
+
+</FrameLayout>
